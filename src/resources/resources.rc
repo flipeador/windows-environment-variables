@@ -1,0 +1,48 @@
+#include "resources.h"
+
+
+/*
+    WEBVIEW
+*/
+
+EDITWINDOW_HTML WEBVIEW "resources/WEBVIEW/EditWindow.html"
+
+
+/*
+    Version
+    https://learn.microsoft.com/en-us/windows/win32/menurc/versioninfo-resource
+*/
+
+VS_VERSION_INFO VERSIONINFO
+    FILEVERSION    1,0,0,0
+    PRODUCTVERSION 1,0,0,0
+    FILEFLAGSMASK  0x0000003FL
+    #ifdef _DEBUG
+    FILEFLAGS VS_FF_DEBUG
+    #else
+    FILEFLAGS 0x00000000L
+    #endif
+    FILEOS         VOS_NT_WINDOWS32
+    FILETYPE       VFT_APP
+    FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0" // LANG_ENGLISH/SUBLANG_ENGLISH_US, Unicode
+        BEGIN
+            VALUE "FileVersion", "1.0.0"
+            VALUE "ProductVersion", "1.0.0"
+            VALUE "InternalName", "envvars"
+            VALUE "OriginalFilename", "envvars.exe"
+            VALUE "CompanyName", "Flipeador"
+            VALUE "ProductName", "Environment Variables Editor"
+            VALUE "LegalCopyright", "©︎ 2025 flipeador@gmail.com"
+            VALUE "FileDescription", "Environment Variables Editor"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        // Use LANG_NEUTRAL so that the info is displayed in Explorer regardless of the system language.
+        VALUE "Translation", 0x0000, 1200 // LANG_NEUTRAL, Unicode
+    END
+END

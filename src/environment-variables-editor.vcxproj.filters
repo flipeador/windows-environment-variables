@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ui\App.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\window\Window.cpp">
+      <Filter>ui\window</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\windows.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\window\controls\common\CommonControl.cpp">
+      <Filter>ui\window\controls\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\window\controls\common\TreeView.cpp">
+      <Filter>ui\window\controls\common</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\menu.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\error.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\util.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\com.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\window\controls\WebView.cpp">
+      <Filter>ui\window\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\gdi.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\lib\console.cpp">
+      <Filter>ui\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ui">
+      <UniqueIdentifier>{bee93042-0118-4c5d-9584-620f41defbbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\window">
+      <UniqueIdentifier>{09f7bdcc-7e6f-4230-9b60-4b9cf1e8b25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\window\controls">
+      <UniqueIdentifier>{6ea9f4b3-95fb-4824-8f85-5887f7b0b63a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\lib">
+      <UniqueIdentifier>{03932c65-a929-4cc9-8c09-6edab6b5662f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\window\controls\common">
+      <UniqueIdentifier>{ecd60ce4-cb21-46e9-9d36-9f9694863cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{d268f058-ece8-43a9-bc0c-2f0054799389}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui\App.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\framework.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\window\Window.h">
+      <Filter>ui\window</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\windows.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\window\controls\common\CommonControl.h">
+      <Filter>ui\window\controls\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\window\controls\common\TreeView.h">
+      <Filter>ui\window\controls\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\string.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\util.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\menu.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\error.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\com.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\window\controls\WebView.h">
+      <Filter>ui\window\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\gdi.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\resources.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ui\lib\console.h">
+      <Filter>ui\lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\resources.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

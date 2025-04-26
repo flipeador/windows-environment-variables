@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly
+  xmlns="urn:schemas-microsoft-com:asm.v1"
+  xmlns:v2="urn:schemas-microsoft-com:asm.v2"
+  xmlns:v3="urn:schemas-microsoft-com:asm.v3"
+  manifestVersion="1.0">
+
+  <assemblyIdentity type="win32" version="1.0.0.0" name="Flipeador.EnvVars"/>
+
+  <description>Environment Variables Editor</description>
+
+  <dependency>
+    <dependentAssembly>
+      <assemblyIdentity
+        type="win32"
+        name="Microsoft.Windows.Common-Controls"
+        version="6.0.0.0"
+        processorArchitecture="*"
+        publicKeyToken="6595b64144ccf1df"
+        language="*"/>
+    </dependentAssembly>
+  </dependency>
+
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- W10 | W11 | WS2016 | WS2019 | WS2022 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>
+    </application>
+  </compatibility>
+
+  <v2:trustInfo>
+    <v2:security>
+      <v2:requestedPrivileges>
+        <v2:requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </v2:requestedPrivileges>
+    </v2:security>
+  </v2:trustInfo>
+
+  <v3:application>
+    <v3:windowsSettings
+      xmlns:y11="http://schemas.microsoft.com/SMI/2011/WindowsSettings"
+      xmlns:y16="http://schemas.microsoft.com/SMI/2016/WindowsSettings"
+      xmlns:y19="http://schemas.microsoft.com/SMI/2019/WindowsSettings">
+      <y11:disableWindowFiltering>true</y11:disableWindowFiltering>
+      <y16:dpiAwareness>PerMonitorV2</y16:dpiAwareness>
+      <y16:longPathAware>true</y16:longPathAware>
+      <y19:activeCodePage>UTF-8</y19:activeCodePage>
+    </v3:windowsSettings>
+  </v3:application>
+
+</assembly>
